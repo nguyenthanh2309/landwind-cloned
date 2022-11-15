@@ -2,16 +2,15 @@
 .navBar {
     display: flex;
     gap: 32px;
-    &>a {
-        font-weight: 500;
-    }
 }
 
 .btnWrapper {
     &>a {
         font-size: $text-base;
         padding: 8px 12px;
+        margin-right: 4px;
         &:last-child {
+            font-size: $text-sm;
             color: $secondary-color;
             background-color: $primary-color;
             border-radius: 8px;

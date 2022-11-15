@@ -6,6 +6,11 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: #6b7280;
+    transition: .3s ease-in-out;
+}
+
 li {
     list-style: none;
 }

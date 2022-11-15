@@ -1,0 +1,41 @@
+@use '../../styles/variables' as *;
+@mixin absoluteCenter {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.testimonialsSection {
+    padding: 96px;
+    background-color: $bg-color-2;
+    .contentWrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        &>img {
+            max-width: 48px;
+            max-height: 45px;
+        }
+        &>p {
+            display: inline-block;
+            color: $font-color;
+            font-size: $text-2xl;
+            font-weight: 600;
+            text-align: center;
+            margin: 0 224px;
+        }
+        .customer {
+            display: flex;
+            gap: 12px;
+            &>img {
+                max-width: 24px;
+                max-height: 24px;
+            }
+            &>h5,
+            span:not(span:last-child) {
+                color: $font-color;
+                font-weight: 600;
+            }
+        }
+    }
+}

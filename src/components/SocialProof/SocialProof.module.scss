@@ -1,0 +1,57 @@
+@use "../../styles/variables" as *;
+.socialProofSection {
+    padding: 96px;
+    .leftContentWrapper {
+        .title {
+            margin-bottom: 24px;
+            &>h5 {
+                color: $primary-color;
+                font-size: $text-lg;
+            }
+            &>h1 {
+                color: $font-color;
+                font-weight: 800;
+                font-size: $text-4xl;
+                margin-bottom: 16px;
+            }
+            &>p {
+                color: $font-color-light;
+                font-size: $text-xl;
+                font-weight: 300;
+            }
+        }
+        .seperator {
+            margin: 24px 0;
+            border: 1px solid $bg-color;
+        }
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            &>a {
+                color: $primary-color;
+                font-weight: 500;
+                &::after {
+                    content: "\f061";
+                    font-weight: 600;
+                    font-family: $icon-font;
+                    display: inline-block;
+                    margin-left: 8px;
+                }
+            }
+        }
+    }
+    .rightContentWrapper {
+        &>h3 {
+            margin-top: 16px;
+            color: $font-color;
+            font-size: $text-2xl;
+            font-weight: 700;
+        }
+        &>p {
+            margin-top: 8px;
+            color: $font-color-light;
+            font-weight: 300;
+        }
+    }
+}

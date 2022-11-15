@@ -1,0 +1,36 @@
+@use "../../styles/variables" as *;
+.heroSection {
+    padding: 64px 0;
+    .leftContentWrapper {
+        padding: 62px 0;
+        &>h1 {
+            font-size: $text-6xl;
+            font-weight: 900;
+            color: $font-color;
+            margin-bottom: 24px;
+        }
+        &>p {
+            color: $font-color-light;
+            font-size: $text-xl;
+            margin-bottom: 40px;
+        }
+    }
+    .rightContentWrapper {
+        &>img {
+            max-width: 532px;
+            max-height: 416px;
+        }
+    }
+    .btnWrapper {
+        &>a {
+            font-size: $text-base;
+            font-weight: 500;
+            padding: 12px 20px;
+            &:first-child {
+                background-color: $primary-color;
+                color: $secondary-color;
+                border-radius: 8px;
+            }
+        }
+    }
+}

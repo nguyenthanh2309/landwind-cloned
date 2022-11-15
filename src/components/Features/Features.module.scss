@@ -1,0 +1,46 @@
+@use "../../styles/variables" as *;
+.featuresSection {
+    padding: 96px 0;
+    .contentWrapper {
+        .titleWrapper {
+            margin-bottom: 32px;
+            &>h1 {
+                color: $font-color;
+                font-size: $text-4xl;
+                font-weight: 800;
+                margin-bottom: 16px;
+            }
+        }
+        .featuresWrapper {
+            .featuresList {
+                padding-top: 32px;
+                padding-left: 0;
+                margin-bottom: 24px;
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                &>li {
+                    color: $font-color;
+                    font-weight: 500;
+                    &::before {
+                        content: "\f058";
+                        font-family: $icon-font;
+                        color: $primary-color;
+                        display: inline-block;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+        & p {
+            font-size: $text-xl;
+            color: $font-color-light;
+        }
+    }
+    .rightImageContentWrapper {
+        text-align: right;
+    }
+    .leftImageContentWrapper {
+        text-align: left;
+    }
+}

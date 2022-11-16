@@ -1,0 +1,51 @@
+@use '../../styles/variables' as *;
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 64px;
+    .navCategory {
+        color: $font-color;
+        font-size: $text-sm;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+    .navLinks {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        &>li>a {
+            color: $font-color-light;
+            &:hover {
+                color: $font-color;
+                transition: .3s ease-in-out;
+            }
+        }
+    }
+}
+
+.contentWrapper {
+    width: 384px;
+    margin: 0 auto;
+    padding: 64px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    .copyright {
+        color: $font-color-light;
+        text-align: center;
+    }
+    .socialLinks {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        &>a {
+            color: $font-color-light;
+            &:hover {
+                color: $font-color;
+                transition: .3s ease-in-out;
+            }
+        }
+    }
+}

@@ -27,9 +27,14 @@
             font-weight: 500;
             padding: 12px 20px;
             &:first-child {
+                border: 2px solid $primary-color;
                 background-color: $primary-color;
                 color: $secondary-color;
                 border-radius: 8px;
+            }
+            &:hover {
+                background-color: transparent;
+                color: $primary-color;
             }
         }
     }

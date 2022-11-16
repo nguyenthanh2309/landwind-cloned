@@ -10,7 +10,7 @@ const Features = () => {
   return (
     <section className={styles.featuresSection}>
       <Container className="custom-container">
-        <Row>
+        <Row className="m-80">
           <Col xl={6}>
             <div className={styles.contentWrapper}>
               <div className={styles.titleWrapper}>

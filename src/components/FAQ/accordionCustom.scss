@@ -1,0 +1,21 @@
+@use '../../styles/variables' as *;
+.accordion-item {
+    width: 695px;
+    margin: 0 auto;
+    border: none;
+    .accordion-button {
+        color: $font-color;
+        background-color: transparent;
+        font-size: $text-lg;
+        font-weight: 500;
+        &[aria-expand="false"] {
+            color: $font-color-light;
+        }
+    }
+}
+
+.accordion-collapse {
+    .accordion-body {
+        color: $font-color-light;
+    }
+}

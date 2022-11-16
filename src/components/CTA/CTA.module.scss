@@ -1,0 +1,30 @@
+@use '../../styles/variables' as *;
+.CTASection {
+    padding: 96px;
+    background-color: $bg-color-2;
+    .contentWrapper {
+        text-align: center;
+        &>h1 {
+            color: $font-color;
+            font-size: $text-4xl;
+            font-weight: 800;
+        }
+        &>p {
+            color: $font-color-light;
+            font-size: $text-xl;
+            margin: 20px 0;
+        }
+    }
+    .btnWrapper {
+        display: inline-block;
+        padding: 12px 20px;
+        background-color: $primary-color;
+        color: $secondary-color;
+        border-radius: 8px;
+        border: 2px solid $primary-color;
+        &:hover {
+            background-color: transparent;
+            color: $primary-color;
+        }
+    }
+}
